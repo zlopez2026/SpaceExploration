@@ -789,12 +789,6 @@ a:active {
     function reload() {
       location.reload();
     }
-    $(document).keydown(function(e){
-    if (e.keyCode == 87) { 
-       document.getElementById('forward').play();
-       return false;
-    }
-});
     
     function updateGameArea() {
         if (myGamePiece.crashWith(myObstacle)) {
