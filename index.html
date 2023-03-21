@@ -1329,7 +1329,7 @@ a:active {
         if (myGameArea.keys && myGameArea.keys[77]) {location.reload(); }
         myGamePiece.newPos();
         myGamePiece.update();
-        myScore.text = "SCORE: " + Math.ceil(10000 - (myGameArea.frameNo/250 * 20)); 
+        myScore.text = "SCORE: " + Math.ceil(10000 - (myGameArea.frameNo/2500 * 10)); 
         myTime.text = "Time: " + Math.ceil(300 - myGameArea.frameNo/2500)
         myScore.update();
         myTime.update();
