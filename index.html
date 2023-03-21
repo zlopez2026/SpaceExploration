@@ -1452,10 +1452,6 @@ a:active {
         var audio = document.getElementById("click");
         audio.play();
     }
-    function click() {
-    var audio = document.getElementById("click");
-        audio.play();
-    }
     </script>
 </head>
 <body>
@@ -1463,11 +1459,11 @@ a:active {
     <div id="head">Space Exploration</div>
     <div id="levels">Levels</div>
     <div id="newGame" onmouseover="this.style.backgroundColor = 'darkblue'" onmouseout="this.style.backgroundColor = '#0D0C12'" onclick="showLvls()">Start Game  </div>
-    <a href="references.html" target="_blank" onclick="click()"><div id="credBtn" onmouseover="this.style.backgroundColor = 'darkblue'" onmouseout="this.style.backgroundColor = '#0D0C12'">Credits</div></a>
+    <a href="references.html" target="_blank"><div id="credBtn" onmouseover="this.style.backgroundColor = 'darkblue'" onmouseout="this.style.backgroundColor = '#0D0C12'">Credits</div></a>
     <div id="credits"></div>
-    <a href="Credits.html" target="_blank" onclick="click()"><div id="ATABtn" onmouseover="this.style.backgroundColor = 'darkblue'" onmouseout="this.style.backgroundColor = '#0D0C12'">About The Developers</div></a>
+    <a href="Credits.html" target="_blank"><div id="ATABtn" onmouseover="this.style.backgroundColor = 'darkblue'" onmouseout="this.style.backgroundColor = '#0D0C12'">About The Developers</div></a>
     <div id="ATA">Coded by zab</div>  
-    <a href="manual.html" target="_blank" onclick="click()"><div id="HtPBtn" onmouseover="this.style.backgroundColor = 'darkblue'" onmouseout="this.style.backgroundColor = '#0D0C12'">How to Play</div></a>
+    <a href="manual.html" target="_blank"><div id="HtPBtn" onmouseover="this.style.backgroundColor = 'darkblue'" onmouseout="this.style.backgroundColor = '#0D0C12'">How to Play</div></a>
     <div id="HtP"></div>
     <div id="gameover">game oVEr!</div>
     <div id="l1" onmouseover="this.style.backgroundColor = 'darkblue'" onmouseout="this.style.backgroundColor = '#0D0C12'" onclick="levelz()">Level 1</div>
@@ -1475,7 +1471,7 @@ a:active {
     <div id="l3" onmouseover="this.style.backgroundColor = 'darkblue'" onmouseout="this.style.backgroundColor = '#0D0C12'" onclick="level3()">Level 3</div>
     <div id="backBtn" onmouseover="this.style.backgroundColor = 'darkblue'" onmouseout="this.style.backgroundColor = '#0D0C12'" onclick="goBack()">Back</div>
     <div id="menu"></div>
-    <audio autoplay loop>
+    <audio controls autoplay loop>
         <source src="onlymp3.to_-_Universe_-_Space_Ambient_Background_Music_For_Videos_Creative_Commons-g7h5eT3X_XU-256k-1654784729157.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
