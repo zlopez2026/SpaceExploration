@@ -1367,6 +1367,8 @@ a:active {
         document.getElementById("l1").style.display = "none"; 
         document.getElementById("l2").style.display = "none";  
         document.getElementById("l3").style.display = "none";
+        var audio = document.getElementById("click");
+        audio.play();
     };
     var goBack = function() {
         document.getElementById("backBtn").style.display = "none";
@@ -1384,6 +1386,8 @@ a:active {
         document.getElementById("l1").style.display = "none"; 
         document.getElementById("l2").style.display = "none";  
         document.getElementById("l3").style.display = "none";
+        var audio = document.getElementById("click");
+        audio.play();
     };
     var showATA = function() {
         document.getElementById("backBtn").style.display = "block";
@@ -1401,6 +1405,8 @@ a:active {
         document.getElementById("l1").style.display = "none"; 
         document.getElementById("l2").style.display = "none";  
         document.getElementById("l3").style.display = "none";
+        var audio = document.getElementById("click");
+        audio.play();
     };
     var showHtP = function() {
         document.getElementById("himg").style.display = "block";
@@ -1417,7 +1423,9 @@ a:active {
         document.getElementById("gameover").style.display = "none";
         document.getElementById("l1").style.display = "none"; 
         document.getElementById("l2").style.display = "none";  
-        document.getElementById("l3").style.display = "none";   
+        document.getElementById("l3").style.display = "none";  
+        var audio = document.getElementById("click");
+        audio.play();
     };
     var showLvls = function () {
         document.getElementById("himg").style.display = "block";
@@ -1434,7 +1442,9 @@ a:active {
         document.getElementById("gameover").style.display = "none";
         document.getElementById("l1").style.display = "block"; 
         document.getElementById("l2").style.display = "block";  
-        document.getElementById("l3").style.display = "block";  
+        document.getElementById("l3").style.display = "block"; 
+        var audio = document.getElementById("click");
+        audio.play();
     }
     </script>
 </head>
@@ -1459,5 +1469,6 @@ a:active {
         <source src="onlymp3.to_-_Universe_-_Space_Ambient_Background_Music_For_Videos_Creative_Commons-g7h5eT3X_XU-256k-1654784729157.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
+    <audio id="click" src="mixkit-cool-interface-click-tone-2568.wav"></audio>
 </body>
 </html>
