@@ -785,6 +785,10 @@ a:active {
                 myTime.text = 0;
             }
         }
+        this.forward = function() {
+            if (myGamePiece.speed = 3) {
+                 document.getElementById('forward').play();
+            }
     }
     function reload() {
       location.reload();
@@ -1333,7 +1337,7 @@ a:active {
         if (myGameArea.keys && myGameArea.keys[39]) {myGamePiece.moveAngle = 2; }
         if (myGameArea.keys && myGameArea.keys[68]) {myGamePiece.moveAngle = 2; }
         if (myGameArea.keys && myGameArea.keys[38]) {myGamePiece.speed = 3; }
-        if (myGameArea.keys && myGameArea.keys[87]) {myGamePiece.speed = 3; document.getElementById('forward').play();}
+        if (myGameArea.keys && myGameArea.keys[87]) {myGamePiece.speed = 3;}
         if (myGameArea.keys && myGameArea.keys[40]) {myGamePiece.speed = -3; }
         if (myGameArea.keys && myGameArea.keys[83]) {myGamePiece.speed = -3; }
         if (myGameArea.keys && myGameArea.keys[81]) {myGamePiece.x = 1300; myGamePiece.y = 225; myGamePiece.angle = 7.86; }
@@ -1485,5 +1489,8 @@ a:active {
     <div id="menu"></div>
     <audio id="bgm" src="onlymp3.to_-_Universe_-_Space_Ambient_Background_Music_For_Videos_Creative_Commons-g7h5eT3X_XU-256k-1654784729157.mp3" autoplay loop></audio>
     <audio id="click" src="mixkit-cool-interface-click-tone-2568.wav"></audio>
+    <audio id="forward" src="mixkit-space-rocket-full-power-turbine-1720.wav" loop></audio>
+    <audio id="backward" src="mixkit-sound-alert-in-hall-1006.wav" loop></audio>
+    <audio id="turn" src="mixkit-classic-winner-alarm-1997.wav" loop></audio>
 </body>
 </html>
