@@ -789,6 +789,12 @@ a:active {
     function reload() {
       location.reload();
     }
+    $(document).keydown(function(e){
+    if (e.keyCode == 87) { 
+       document.getElementById('forward').play();
+       return false;
+    }
+});
     
     function updateGameArea() {
         if (myGamePiece.crashWith(myObstacle)) {
@@ -1479,5 +1485,8 @@ a:active {
     <div id="menu"></div>
     <audio id="bgm" src="onlymp3.to_-_Universe_-_Space_Ambient_Background_Music_For_Videos_Creative_Commons-g7h5eT3X_XU-256k-1654784729157.mp3" autoplay loop></audio>
     <audio id="click" src="mixkit-cool-interface-click-tone-2568.wav"></audio>
+    <audio id="forward" src="mixkit-space-rocket-full-power-turbine-1720.wav" loop></audio>
+    <audio id="backward" src="mixkit-sound-alert-in-hall-1006.wav" loop></audio>
+    <audio id="turn" src="mixkit-classic-winner-alarm-1997.wav" loop></audio>
 </body>
 </html>
