@@ -1333,7 +1333,7 @@ a:active {
         if (myGameArea.keys && myGameArea.keys[39]) {myGamePiece.moveAngle = 2; }
         if (myGameArea.keys && myGameArea.keys[68]) {myGamePiece.moveAngle = 2; }
         if (myGameArea.keys && myGameArea.keys[38]) {myGamePiece.speed = 3; }
-        if (myGameArea.keys && myGameArea.keys[87]) {myGamePiece.speed = 3;}
+        if (myGameArea.keys && myGameArea.keys[87]) {myGamePiece.speed = 3; document.getElementById('forward').play();}
         if (myGameArea.keys && myGameArea.keys[40]) {myGamePiece.speed = -3; }
         if (myGameArea.keys && myGameArea.keys[83]) {myGamePiece.speed = -3; }
         if (myGameArea.keys && myGameArea.keys[81]) {myGamePiece.x = 1300; myGamePiece.y = 225; myGamePiece.angle = 7.86; }
@@ -1458,7 +1458,12 @@ a:active {
         var audio = document.getElementById("click");
         audio.play();
     }
-    
+    $(document).keydown(function(e){
+    if (e.keyCode == 87) { 
+       document.getElementById('forward').play();
+       return false;
+    }
+});
     </script>
 </head>
 <body>
