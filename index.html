@@ -272,6 +272,8 @@ a:active {
         myScore = new component("30px", "Consolas", "white", 20, 40, "text");
         myTime = new component("30px", "Consolas", "white", 1190, 40, "text");
         myGameArea.start();
+        var audio = document.getElementById("click");
+        audio.play();
     }
     function level2() {
         myGamePiece = new component(20, 25, "red", 25, 250);
@@ -444,6 +446,8 @@ a:active {
         myScore = new component("30px", "Consolas", "white", 20, 40, "text");
         myTime = new component("30px", "Consolas", "white", 1190, 40, "text");
         myGameArea.start();
+        var audio = document.getElementById("click");
+        audio.play();
     }
     function levelz() {
         myGamePiece = new component(20, 25, "red", 25, 250);
@@ -616,6 +620,8 @@ a:active {
         myScore = new component("30px", "Consolas", "white", 20, 40, "text");
         myTime = new component("30px", "Consolas", "white", 1190, 40, "text");
         myGameArea.start();
+        var audio = document.getElementById("click");
+        audio.play();
     }
     
     var myGameArea = {
@@ -1446,6 +1452,10 @@ a:active {
         var audio = document.getElementById("click");
         audio.play();
     }
+    function click() {
+    var audio = document.getElementById("click");
+        audio.play();
+    }
     </script>
 </head>
 <body>
@@ -1453,11 +1463,11 @@ a:active {
     <div id="head">Space Exploration</div>
     <div id="levels">Levels</div>
     <div id="newGame" onmouseover="this.style.backgroundColor = 'darkblue'" onmouseout="this.style.backgroundColor = '#0D0C12'" onclick="showLvls()">Start Game  </div>
-    <a href="references.html" target="_blank"><div id="credBtn" onmouseover="this.style.backgroundColor = 'darkblue'" onmouseout="this.style.backgroundColor = '#0D0C12'">Credits</div></a>
+    <a href="references.html" target="_blank" onclick="click()"><div id="credBtn" onmouseover="this.style.backgroundColor = 'darkblue'" onmouseout="this.style.backgroundColor = '#0D0C12'">Credits</div></a>
     <div id="credits"></div>
-    <a href="Credits.html" target="_blank"><div id="ATABtn" onmouseover="this.style.backgroundColor = 'darkblue'" onmouseout="this.style.backgroundColor = '#0D0C12'">About The Developers</div></a>
+    <a href="Credits.html" target="_blank" onclick="click()"><div id="ATABtn" onmouseover="this.style.backgroundColor = 'darkblue'" onmouseout="this.style.backgroundColor = '#0D0C12'">About The Developers</div></a>
     <div id="ATA">Coded by zab</div>  
-    <a href="manual.html" target="_blank"><div id="HtPBtn" onmouseover="this.style.backgroundColor = 'darkblue'" onmouseout="this.style.backgroundColor = '#0D0C12'">How to Play</div></a>
+    <a href="manual.html" target="_blank" onclick="click()"><div id="HtPBtn" onmouseover="this.style.backgroundColor = 'darkblue'" onmouseout="this.style.backgroundColor = '#0D0C12'">How to Play</div></a>
     <div id="HtP"></div>
     <div id="gameover">game oVEr!</div>
     <div id="l1" onmouseover="this.style.backgroundColor = 'darkblue'" onmouseout="this.style.backgroundColor = '#0D0C12'" onclick="levelz()">Level 1</div>
