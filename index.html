@@ -94,6 +94,8 @@ a:active {
     var myScore;
     var myTime;
     var myBackground;
+    var audio = document.getElementbyId("bgm");
+    audio.volume = 0.6;
 
     function level3() {
         myGamePiece = new component(20, 25, "red", 25, 325);
